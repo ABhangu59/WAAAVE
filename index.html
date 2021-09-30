@@ -2,16 +2,44 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- At the moment, I put all the CSS here. This is going to be a very bad thing as
+it already looks pretty convoluted. Need to move all this over to the style.css file (wilt)--> 
+
 <style>
+
+/* This is for the top green banner. Basically we wanted it to move down with the
+screen as people scroll down right? At the moment whenever I try and fix its position 
+(position: fixed;) the scaling fucks up so for now I'll leave it as stationary. (wilt)
+*/
+.topbanner {
+
+  padding: 60px;
+  text-align: center;
+  background: #1e8b4f;
+  color: white;
+  font-size: 20px;
+  /*position: fixed;  <--- try uncommenting this to see what I mean (wilt)*/
+}
+
+
+/* This is the CSS for that hover over drop down button. Right now it looks dumb but we'll
+figure out how to make it blend in with the website. Also, we need to figure out a way to get 
+this to overlap with the banner you see at the top. So basically this dropdown menu should allow
+to quickly jump to different sections on the page. Also, if we end up implementing that map thing
+we could let them access it from there. We could also put it somewhere more obvious cuz
+we'd wanna make the cool feature more accessible or sum you kno what im sayin (wilt)*/
 
 
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #121312;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
+  position: fixed;
 }
+
 
 .dropdown {
   position: relative;
@@ -36,14 +64,16 @@
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
-
 .dropdown:hover .dropdown-content {display: block;}
-
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+
+/* Code for the parallax scrolling web design we wanted. It looks stupid right now
+cause of place holder image but it'll look nice eventually. Not going to lie, this is way simpler than
+how I thought it was gonna be (shoutout w3schools). (wilt)*/
 .parallax {
 
-  background-image: url("sports.jpeg");
+  background-image: url("sports.jpeg");   /* Place holder image I was talking about (wilt)*/
   background-color: #fffbfb;
  
   min-height: 500px; 
@@ -56,8 +86,21 @@
 </style>
 </head>
 
-<h2>
+<!--
+The HTML portion (wilt)
+-->
 
+
+<!-- This is the banner I said I was having issues with. Don't know how to fix it on to the page
+so it scrolls down when the user scrolls down without the scalling getting absolutely bodied (wilt)-->
+<h1> 
+  <div class = "topbanner"> v not too sure what this is but its a start lol</div>
+</h1>
+
+
+<!-- This is for the dropdown hover over menu. Again, idk wtf I'm doing so maybe if I want to get
+this to overlap with the top header, I should put it between the <h1> thingie above (wilt)-->
+<h2>
   <div class= "dropdown">
     <button class="dropbtn"> hover over</button>
     <div class="dropdown-content">
@@ -70,10 +113,16 @@
 
 <body>
 
-<p> not too sure what this is but its a start lol</p>
-
+<!-- This is just the stuff for the parallax basically. This is probably placed in the wrong spot
+but we'll figure it out (wilt)-->
 <div class="parallax"></div>
 
+
+<!-- This is pretty much that like greenish area you guys are seeing thats below the image. 
+I guess we need to figure how to make multiple sections like that one with images in between each so we have a
+cool transitional type thing for each section you feel me.(wilt)
+
+-->
 <div style="height:1000px;background-color:rgb(91, 185, 115);font-size:36px">
 
 </div>
