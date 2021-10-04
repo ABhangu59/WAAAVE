@@ -1,1 +1,1 @@
-
+waaavee is a multi-purpose sport website that allows its users to schedule 1 on 1 coaching sessions with certified coaches in a sport of their choice. It also simplifies the process of booking a court/space to play their sport (e.g. tennis/squash courts, golf spaces, etc...). waaavee will find and book your court for you, and even match you with another athlete who is interested in the same sport at the same time. 
