@@ -1,102 +1,48 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- At the moment, I put all the CSS here. This is going to be a very bad thing as
-it already looks pretty convoluted. Need to move all this over to the style.css file (wilt)--> 
-
-<style>
-
-/* This is for the top green banner. Basically we wanted it to move down with the
-screen as people scroll down right? At the moment whenever I try and fix its position 
-(position: fixed;) the scaling fucks up so for now I'll leave it as stationary. (wilt)
-*/
-.topbanner {
-
-  padding: 60px;
-  text-align: center;
-  background: #1e8b4f;
-  color: white;
-  font-size: 20px;
-  /*position: fixed; // <--- try uncommenting this to see what I mean */
-}
-
-
-/* This is the CSS for that hover over drop down button. Right now it looks dumb but we'll
-figure out how to make it blend in with the website. Also, we need to figure out a way to get 
-this to overlap with the banner you see at the top. So basically this dropdown menu should allow
-to quickly jump to different sections on the page. Also, if we end up implementing that map thing
-we could let them access it from there. We could also put it somewhere more obvious cuz
-we'd wanna make the cool feature more accessible or sum you kno what im sayin (wilt)*/
-
-
-.dropbtn {
-  background-color: #121312;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  position: fixed;
-}
-
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  min-height: 600px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
-/* Code for the parallax scrolling web design we wanted. It looks stupid right now
-cause of place holder image but it'll look nice eventually. Not going to lie, this is way simpler than
-how I thought it was gonna be (shoutout w3schools). (wilt)*/
-.parallax {
-
-  background-image: url("sports.jpeg");   /* Place holder image I was talking about (wilt)*/
-  background-color: #fffbfb;
- 
-  min-height: 500px; 
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
+<!-- This is code for the following navigation bar. Initally I set the character to a different encoding.
+Then I just created a link to the external style sheet.  -->
+<meta charset = "UTF-8">
+<title>Navbar</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
-<!--
-The HTML portion (wilt)
--->
-
-
-<!-- This is the banner I said I was having issues with. Don't know how to fix it on to the page
-so it scrolls down when the user scrolls down without the scalling getting absolutely bodied (wilt)-->
-<h1> 
-  <div class = "topbanner"> v not too sure what this is but its a start lol</div>
-</h1>
-
+<!-- This is the code for the main 'box' of the navigation bar. It then delves into the different sections
+of the nav bar. Such as the logo text and all the buttons which need to be programmed. -->
+<div class = "box" >
+  <header>
+    <div class = "wrapper">
+      <div class ="logo">
+        <a href ="#"> WAAAVE </a>
+      </div>
+      <nav>
+        <a href = "#">Home</a>
+        <a href = "#">WAVE</a>
+        <a href = "#">About</a>
+        <a href = "#">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Just creates the background banner. -->
+  <div class = "main-banner">
+    <h2>WAAAVE - Creating a Wave in Sports!</h2>
+  </div>
+  <!-- text area-->
+  <div class = "content-area-main"> 
+    <p> Place Holder Text.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+      anim id est laborum.
+    </p>
+  </div>
+</div>
 
 <!-- This is for the dropdown hover over menu. Again, idk wtf I'm doing so maybe if I want to get
 this to overlap with the top header, I should put it between the <h1> thingie above (wilt)-->
