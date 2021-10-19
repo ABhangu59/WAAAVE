@@ -1,1 +1,13 @@
-STYLE GUIDELINES:
+Overall Look And Feel:
+
+
+
+Colours:
+--------
+Our colours will reflect a sport look and will generally be brighter and more energetic:
+-#1e8b4fff (Green)
+-#ffffffff (White)
+-#1e358bff (Blue)
+
+
+
