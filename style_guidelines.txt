@@ -1,9 +1,7 @@
 Overall Look And Feel:
-
-
+The overall look and feel of our website will be smooth and sporty and will be welcome the user with friendly colours
 
 Colours:
---------
 Our colours will reflect a sport look and will generally be brighter and more energetic:
 -#1e8b4fff (Green)
 -#ffffffff (White)
