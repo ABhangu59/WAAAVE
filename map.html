@@ -5,7 +5,7 @@
 	<head>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
+	
 	<style>
 
 		.main-container{
@@ -34,6 +34,10 @@
 			float: left;
 			padding: 20px;
 			border: 2px solid black;
+			position: absolute;
+			left:0;
+			top:0;
+			bottom:0;
 
 		} 
 
@@ -44,7 +48,22 @@
 	<body onload= "main()">
 		<div class= "main-container">		
 			<div id ="sidebar" class="container-child sidebar">
-				alright let me write sum
+				
+			  <header>
+			    <div class = "wrapper">
+			      <div class ="logo">
+				<a href ="#"> WAAAVE </a>
+			      </div>
+			      <nav>
+				<a href = "#">Home</a>
+				<a href = "#">WAVE</a>
+				<a href = "#">About</a>
+				<!-- temp changing this -->
+				<a href = "map.html">Demo</a>
+			      </nav>
+			    </div>
+			  </header>
+
 			</div>
 
 			<div id = "map" class= "container-child map">
