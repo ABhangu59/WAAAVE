@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html>
+
+
 	<head>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 	<style>
-		#map {position:absolute; top:0; bottom:0; left:0; right: 0;}
+
+		.main-container{
+
+			border: 3px solid #fff;
+			padding: 20px;
+
+		}
+
+		.container-child.map {
+
+			width: 65%;
+			float: right;
+			padding: 20px;
+			border: 2px solid black;
+		        position: absolute;	
+			right: 0;
+			top:0;
+			bottom: 0;
+
+
+		} 
+		.container-child.sidebar {
+
+			width: 50%;
+			float: left;
+			padding: 20px;
+			border: 2px solid black;
+
+		} 
+
 	</style>
 
-	</head>
+	</head> 
 
-	<body>
-		<div id = "map"></div>
-		<script>
-			var map = L.map('map').setView([0,0], 1)
-			L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=O3pyJcEeLGNOsjDEVBeQ', {
-				attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-			}).addTo(map);
-		</script>
+	<body onload= "main()">
+		<div class= "main-container">		
+			<div id ="sidebar" class="container-child sidebar">
+				alright let me write sum
+			</div>
+
+			<div id = "map" class= "container-child map">
+			<script src= "map.js"></script>
+			</div>
+		</div>
+
+
 	</body>	
-
 </html>
+
+<html>
+</html>
+
