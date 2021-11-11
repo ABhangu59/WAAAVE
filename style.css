@@ -212,6 +212,13 @@ section{
     width: auto;
 }
 
+.p{
+
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+
+}
+
 
 /*All this code basically does is just make it look pretty. I tried to follow the style guides but may have diverted
 from the set guidelines. Anything is up to change as per the groups decision. */
