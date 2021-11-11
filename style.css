@@ -104,12 +104,6 @@ nav a
 }
 
   
-  /* This is the CSS for that hover over drop down button. Right now it looks dumb but we'll
-  figure out how to make it blend in with the website. Also, we need to figure out a way to get 
-  this to overlap with the banner you see at the top. So basically this dropdown menu should allow
-  to quickly jump to different sections on the page. Also, if we end up implementing that map thing
-  we could let them access it from there. We could also put it somewhere more obvious cuz
-  we'd wanna make the cool feature more accessible or sum you kno what im sayin (wilt)*/
   
   
   .dropbtn {

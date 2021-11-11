@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <link rel="stylesheet" href="map.css">
+	
+		
+	</head>
+	
+	</head>
+
+	<body onload="main()">
+
+		<header>
+			<div class = "wrapper">
+			<div class ="logo">
+				<a href ="#"> WAAAVE </a>
+			</div>
+			<nav>
+				<a href = "#">Home</a>
+				<a href = "#">WAVE</a>
+				<a href = "#">About</a>
+				<a href = "map.html">Demo</a>
+			</nav>
+			</div>
+		</header>
+
+	  <div class = "main-banner">
+		<h2>WAAAVE - Creating a Wave in Sports!</h2>
+	  </div>
+		
+		<div id = "map" class= "container-child map">
+			<script src= "map.js"></script>
+		</div>
+		<div>
+			<div class = 'Overlay' id= 'Overlay'>
+				<button class = "OverlayTabs searchTab" type="button" id= "searchButton">Search </button>
+				<button class = "OverlayTabs lobbyTab" type="button" id= "lobbyButton">Lobbies</button>
+				<div id="searchScreen">
+					
+					<div>
+						<p class="modifierText sportModifier" id="sportModifier"> Choose your sport</p>
+					</div>
+
+					<div class="slider sportSlider">
+						<input type="range" min="1" max="5" value="2" class="slider" id="sportSlider">
+					</div>	
+
+					<div>
+						<p class = "modifierText gamemodeModifier" id="gamemodeModifier">Choose your gamemode</p>
+					</div>
+					<div class="slider distanceSlider">
+						<input type="range" min="1" max="5" value="2" class="slider" id="distanceSlider">
+					</div>	
+
+						<p class = "modifierText distanceModifier" id="distanceModifier">Choose relative distance</p>
+
+					<div class="slider gamemodeSlider">
+						<input type="range" min="1" max="5" value="2" class="slider" id="gamemodeSlider">
+					</div>	
+
+				
+				</div>
+
+				<div class="lobby" id="lobbyScreen">
+					<button class="joinbutton">Join Lobby!</button>
+				</div>
+			</div>
+
+
+		</div>		
+
+	</body>
