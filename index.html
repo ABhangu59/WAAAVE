@@ -256,6 +256,25 @@
                 <p class = 'InformationHeader'>Email</p>
                 <p id = 'Email'>waaave2900@gmail.com</p>
             </div> 
+			
+			<div id='TextareaDiv'>
+			<textarea id = 'ContactUsText'>Type a message.</textarea>
+			</div>
+			
+			<button type='button' id = 'SubmitButton'>Submit</button>
+			<p id = 'SubmitText'></p>
+					
+			<script type='text/javascript'>
+				var submitFunction = function(){
+					var SubmitText = document.getElementById('SubmitText');
+					SubmitText.textContent = 'Thank you for submitting your feedback!';
+					var Textarea = document.getElementById('ContactUsText');
+					Textarea.value = ''
+				}
+				var SubmitButton = document.getElementById('SubmitButton');
+				SubmitButton.addEventListener('click',submitFunction);
+			
+			</script>
     </section>
   
 </body>

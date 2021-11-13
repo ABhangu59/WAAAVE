@@ -413,6 +413,55 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	display:inline-block;
 }
 
+#TextareaDiv{
+	position:absolute;
+	right:12%;
+	background:#1e8b4fff;
+	top: 10%;
+	padding: 10px;
+	background:DarkBlue;
+	
+}
+
+#ContactUsText{
+	border: 3px solid black;
+	background:#1e8b4fff;
+	width:500px;
+	height:500px;
+	font-size:40px;
+	font-family:Calibri;
+	
+}
+
+#SubmitButton{
+	position: absolute;
+	bottom: 10%;
+	right: 23%;
+	border:2px solid black;
+	font-size:15px;
+	width:100px;
+	height:50px;
+	background:DarkBlue;
+	color:#1e8b4fff;
+	font-weight:1000;
+	border-radius:2px;
+	cursor: pointer;
+}
+
+#SubmitText{
+	position: absolute;
+	top:3%;
+	right:14%;
+	border:2px solid black;
+	font-size:15px;
+	width:450px;
+	height:30px;
+	background:DarkBlue;
+	color:#1e8b4fff;
+	font-weight:1000;
+	border-radius:2px;
+}
+
 /* .main-banner
 {
 
