@@ -233,8 +233,8 @@ nav a
 
 .modifierText.distanceModifier{
 
-    top: 390px;
-    right: 100px;
+    top: 395px;
+    right: 25px;
     position: absolute;
 }
 
@@ -255,5 +255,12 @@ nav a
 #gamemodeText{
     top: 250px;
     position: relative;
+    display: block;
+}
+
+#distanceText{
+    top: 20px;
+    position: relative;
+    right: 10px;
     display: block;
 }

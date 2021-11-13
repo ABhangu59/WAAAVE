@@ -72,12 +72,14 @@ class UIController{
 
     }
 
-    editSportValue(){
+    editModifierValues(){
 
         var sportSlider = document.getElementById("sportSlider");
         var sportText = document.getElementById("sportText");
         var gamemodeSlider = document.getElementById("gamemodeSlider");
         var gamemodeText = document.getElementById("gamemodeText");
+        var distanceSlider = document.getElementById("distanceSlider");
+        var distanceText = document.getElementById("distanceText");
         const event = new Event('change');
 
 
@@ -151,6 +153,7 @@ class UIController{
             UI.updateGamemodeValue();
             
         });
+
     }
 
         updateGamemodeValue(){
@@ -205,7 +208,7 @@ class UIController{
                     if(gamemodeSlider.value == 1){
                         gamemodeText.innerHTML = "throw and bat"
                     }else if(gamemodeSlider.value = 2){
-                        gamemodeText.innerHTML = "9v9 and bat"
+                        gamemodeText.innerHTML = "9v9"
                     }
             }else if(sportSlider.value == 6){
                 //football
@@ -232,9 +235,9 @@ class UIController{
                         gamemodeText.innerHTML = "2v2";
                     } 
 
-            
-
         }
+
+
 
     }
 
@@ -350,7 +353,7 @@ function initializeMap(){
 function main(){
     
     let UI = new UIController();
-    UI.editSportValue();
+    UI.editModifierValues();
     initializeMap();
     initializeLobbies();
     lobbyManager();
