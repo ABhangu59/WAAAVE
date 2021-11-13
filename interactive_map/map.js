@@ -8,32 +8,55 @@ class UIController{
         this.view = "ok" // 0 means it's on search view, 1 means it's on lobby page
         this.lobbyScreenHidden();
         this.searchTabButton.addEventListener("click", function(){
+        this.selectedSport = "basketball"; //default value ig
 
-            var divsToShow = document.getElementsByClassName("slider"); 
-            var divsToHide = document.getElementsByClassName("lobby");
+            var toShow = [];
+            toShow.push(document.getElementsByClassName("slider"))
+            toShow.push(document.getElementsByClassName("modifierText"));
+            toShow.push(document.getElementsByClassName("selectionText"))
 
-            for(var i = 0; i < divsToShow.length; i++){
-                divsToShow[i].style.display = "block";
+            var toHide = [];
+            toHide.push(document.getElementsByClassName("lobby")) 
+
+            for(var i = 0; i < toShow.length; i++){
+                for (var j = 0; j < toShow[i].length; j++){
+                    toShow[i][j].style.display = "block";
+                }
             } 
 
-            for(var i = 0; i < divsToHide.length; i++){
-                divsToHide[i].style.display = "none";
+            for(var i = 0; i < toHide.length; i++){
+                for (var j = 0; j < toHide[i].length; j++){
+                    toHide[i][j].style.display = "none";
+
+                }
             } 
         });
 
         this.lobbyTabButton.addEventListener("click", function(){
 
-            var divsToHide = document.getElementsByClassName("slider"); 
-            var divsToShow = document.getElementsByClassName("lobby");
+            var toHide = [];
+            toHide.push(document.getElementsByClassName("slider"))
+            toHide.push(document.getElementsByClassName("modifierText"));
+            toHide.push(document.getElementsByClassName("selectionText"))
 
-            for(var i = 0; i < divsToHide.length; i++){
-                divsToHide[i].style.display = "none";
+            var toShow = [];
+            toShow.push(document.getElementsByClassName("lobby")) 
+
+            var test =document.getElementsByClassName("modifierText");
+
+            for(var i = 0; i < toShow.length; i++){
+                for (var j =0; j < toShow[i].length; j++){
+                    toShow[i][j].style.display = "block";
+                }
             } 
 
-            for(var i = 0; i < divsToShow.length; i ++){
-                divsToShow[i].style.display = "inline-block"
+            for(var i = 0; i < toHide.length; i++){
+                for (var j = 0; j < toHide[i].length; j++){
+                    toHide[i][j].style.display = "none";
 
-            }
+                }
+            } 
+            
 
 
 
@@ -49,6 +72,114 @@ class UIController{
 
     }
 
+    editSportValue(){
+
+        var sportSlider = document.getElementById("sportSlider");
+        var sportText = document.getElementById("sportText");
+        var gamemodeSlider = document.getElementById("gamemodeSlider");
+        var gamemodeText = document.getElementById("gamemodeText");
+        const event = new Event('change');
+
+
+        sportSlider.addEventListener("click", function(){
+
+            if (sportSlider.value == 7){
+                sportText.innerHTML = "tennis";
+            }else if(sportSlider.value == 1){
+                sportText.innerHTML = "soccer";
+
+            }else if(sportSlider.value == 2){
+                sportText.innerHTML = "basketball";
+            }else if(sportSlider.value == 3){
+
+                sportText.innerHTML = "volleyball";
+            }else if(sportSlider.value == 4){
+                sportText.innerHTML = "field hockey";
+            }else if(sportSlider.value == 5){
+                sportText.innerHTML = "baseball";
+            }else if(sportSlider.value == 6){
+                sportText.innerHTML = "football";
+            }
+
+        });
+
+
+        sportSlider.addEventListener('change', function(e){
+
+            if(sportSlider.value == 1){
+                //soccer
+                gamemodeSlider.max = 4;
+            }else if(sportSlider.value == 2){
+                //basketball
+                gamemodeSlider.max = 4;
+            }else if(sportSlider.value == 3){
+                //volleyabll
+                gamemodeSlider.max = 2; 
+            }else if(sportSlider.value == 4){
+                //field hockey
+                gamemodeSlider.max = 2;
+            }else if(sportSlider.value == 5){
+                //baseball
+                gamemodeSlider.max = 3;
+            }else if(sportSlider.value == 6){
+                //football
+                gamemodeSlider.max = 4;
+
+            }else if (sportSlider.value == 7){
+                //tennis
+                gamemodeSlider.max = 2;
+            }
+            if(gamemodeSlider.max > 2){
+                gamemodeSlider.value = 2; 
+            }else{
+
+                gamemodeSlider.value = 1;
+            }
+
+        });
+
+        gamemodeSlider.addEventListener("click", function(){
+
+            
+            if(sportSlider.value == 1){
+                //soccer
+                //gamemodeSlider.max = 4;
+
+                if(gamemodeSlider.value == 1){
+                    gamemodeText.innerHTML = "11v11"
+                }else if(gamemodeSlider.value == 2){
+                    gamemodeText.innerHTML = "7v7"
+                }else if(gamemodeSlider.value == 3){
+                    gamemodeText.innerHTML="5v5"
+                }else if(gamemodeSlider.value == 4){
+                    gamemodeText.innerHTML = "penalties"
+                }
+
+            }else if(sportSlider.value == 2){
+                //basketball
+                //gamemodeSlider.max = 4;
+            }else if(sportSlider.value == 3){
+                //volleyabll
+                //gamemodeSlider.max = 2; 
+            }else if(sportSlider.value == 4){
+                //field hockey
+                //gamemodeSlider.max = 2;
+            }else if(sportSlider.value == 5){
+                //baseball
+                //gamemodeSlider.max = 3;
+            }else if(sportSlider.value == 6){
+                //football
+                //gamemodeSlider.max = 4;
+             } else if (sportSlider.value == 7){
+                    //tennis
+                    //gamemodeSlider.max = 2;
+    
+
+            }
+
+        });
+
+    }
 
 }
 
@@ -136,13 +267,11 @@ function lobbyManager(){
     var child = document.createElement('p');
     var text = document.createTextNode("TESTING STUFF OUT REALLY QUICKLy")
     child.appendChild(text);
-    overlay = document.getElementById("Overlay");
+    overlay = document.getElementById("lobbyScreen");
     overlay.style.overflow = scroll;
-    overlay.appendChild(child);
-    child.style.display = none;
+    child.style.display = "block";
     overlay.appendChild(child)
-    */
-
+*/
 }
 
 function initializeMap(){
@@ -164,8 +293,10 @@ function initializeMap(){
 function main(){
     
     let UI = new UIController();
+    UI.editSportValue();
     initializeMap();
     initializeLobbies();
     lobbyManager();
+
 
 }

@@ -177,7 +177,10 @@ nav a
     color: #fff; 
 }
 
-.joinbutton {
+.lobby{
+    top: 90px;
+}
+.lobby.joinbutton {
     background-color: #697169; /* Green */
     border: none;
     color: white;
@@ -190,17 +193,24 @@ nav a
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     z-index: 3;
     cursor: pointer;
     position: absolute;
   }
 
+.lobby.info{
+
+    top: 80px;
+    left: 5px;
+    position: absolute;
+}
 
 .modifierText{
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
+    display: block;
 
 }
 
@@ -226,4 +236,24 @@ nav a
     top: 390px;
     right: 100px;
     position: absolute;
+}
+
+
+.selectionText{
+
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+
+}
+
+#sportText{
+    top: 150px;
+    position: relative;
+    display: block;
+}
+
+#gamemodeText{
+    top: 250px;
+    position: relative;
+    display: block;
 }
