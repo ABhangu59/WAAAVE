@@ -282,6 +282,8 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 
 #Contact{
 	background-color:#ADD8E6;
+	position: relative;
+	height:750px;
 }
 
 #CUHeader{
@@ -293,12 +295,15 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	border-radius:50px;
 	border: 3px solid black;
 	width:300px;
-	height:100px;
+	height:50px;
+	padding:7px;
 }
 
-.GitHub{
-	float:left;
-	margin-left:150px;
+#GitHub{
+	position:absolute;
+	top:25%;
+	left:20%;
+	/*background-color: rgb(224, 102, 102);*/
 }
 
 #WaaaveLogo{
@@ -307,9 +312,11 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	padding:10px;
 }
 
-.Twitter{
-	float:left;
-	margin-left:50px;
+#Twitter{
+	position:absolute;
+	top:25%;
+	left:30%;
+	/*background-color: rgb(224, 102, 102);*/
 }
 
 #TwitterLogo{
@@ -319,6 +326,29 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	padding:10px;
 }
 
+#AddressDiv{
+	position: absolute;
+	left:10%;
+	top: 60%;
+	/*background-color:tomato;*/
+	
+}
+
+#NumberDiv{
+	position: absolute;
+	left:10%;
+	top: 70%;
+	/*background-color:tomato;*/
+	
+}
+
+#EmailDiv{
+	position: absolute;
+	left:10%;
+	top: 80%;
+	/*background-color:tomato;*/	
+
+}
 .SocialsHeader{
 	text-align:center;
 	margin:auto;
@@ -328,13 +358,9 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	border-radius:50px;
 	border: 3px solid black;
 	width:100px;
-	height:100px;
+	height:30px;
 }
-.InformationHeaderDiv{
-	clear:left;
-	width:50%;
-	padding:20px 0;
-}
+
 
 .InformationHeader{
 	text-align:center;
@@ -370,14 +396,14 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	border-radius:50px;
 	border: 3px solid black;
 	width:400px;
-	height:50px;
+	height:40px;
 	display:inline-block;
 }
 
 #Email{
 	text-align:center;
 	margin-left:50px;
-	font-size:40px;
+	font-size:35px;
 	font-family: Calibri;
 	background:#1e8b4fff;
 	border-radius:50px;
