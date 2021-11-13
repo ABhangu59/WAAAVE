@@ -5,10 +5,12 @@ class UIController{
         this.view = 0;
         this.searchTabButton = document.getElementById('searchButton');
         this.lobbyTabButton = document.getElementById('lobbyButton');
+        this.waveButton = document.getElementById('waveButton')
         this.view = "ok" // 0 means it's on search view, 1 means it's on lobby page
         this.lobbyScreenHidden();
         this.searchTabButton.addEventListener("click", function(){
         this.selectedSport = "basketball"; //default value ig
+        this.gamemodeValue = "3v3 half court";
 
             var toShow = [];
             toShow.push(document.getElementsByClassName("slider"))
@@ -30,38 +32,24 @@ class UIController{
 
                 }
             } 
+
+            //individual elements here
+            document.getElementById("waveButton").style.display = "block"
         });
 
         this.lobbyTabButton.addEventListener("click", function(){
-
-            var toHide = [];
-            toHide.push(document.getElementsByClassName("slider"))
-            toHide.push(document.getElementsByClassName("modifierText"));
-            toHide.push(document.getElementsByClassName("selectionText"))
-
-            var toShow = [];
-            toShow.push(document.getElementsByClassName("lobby")) 
-
-            var test =document.getElementsByClassName("modifierText");
-
-            for(var i = 0; i < toShow.length; i++){
-                for (var j =0; j < toShow[i].length; j++){
-                    toShow[i][j].style.display = "block";
-                }
-            } 
-
-            for(var i = 0; i < toHide.length; i++){
-                for (var j = 0; j < toHide[i].length; j++){
-                    toHide[i][j].style.display = "none";
-
-                }
-            } 
-            
-
-
-
-
+            //fourth time doing this, imma do it a fifth lool
+                var UI = new UIController();
+                UI.switchToLobbyScreen();
         });
+
+        this.waveButton.addEventListener("click", function(){
+            //fifth time lessssgo
+            var UI = new UIController();
+            UI.switchToLobbyScreen();
+        });
+
+        
     }
     
     lobbyScreenHidden(){
@@ -80,6 +68,7 @@ class UIController{
         var gamemodeText = document.getElementById("gamemodeText");
         var distanceSlider = document.getElementById("distanceSlider");
         var distanceText = document.getElementById("distanceText");
+        var waveButton = document.getElementById("waveButton");
         const event = new Event('change');
 
 
@@ -142,6 +131,8 @@ class UIController{
             UI.updateGamemodeValue();
 
         });
+        
+        
 
         gamemodeSlider.addEventListener("click", function(){
             ////// IMMA KEEP IT A BUCK, THIS RIGHT HERE. THESE TWO LINES. YEAH THESE ARE THE TWO WORST
@@ -235,11 +226,47 @@ class UIController{
                         gamemodeText.innerHTML = "2v2";
                     } 
 
+                }
+
+                this.gamemodeValue = gamemodeText.innerHTML;
         }
 
+        switchToLobbyScreen(){
+            
+            var toHide = [];
+            toHide.push(document.getElementsByClassName("slider"))
+            toHide.push(document.getElementsByClassName("modifierText"));
+            toHide.push(document.getElementsByClassName("selectionText"))
+            
 
+            var toShow = [];
+            toShow.push(document.getElementsByClassName("lobby")) 
 
+            for(var i = 0; i < toShow.length; i++){
+                for (var j = 0; j < toShow[i].length; j++){
+                    toShow[i][j].style.display = "block";
+                }
+            } 
+
+            for(var i = 0; i < toHide.length; i++){
+                for (var j = 0; j < toHide[i].length; j++){
+                    toHide[i][j].style.display = "none";
+
+                }
+            } 
+
+            //individual elements here
+            document.getElementById("waveButton").style.display = "none";
+
+            var x = Math.random() * (parseInt(distanceText.innerHTML)-1)+1;
+            x = Math.round(x);
+
+            document.getElementById("lobby info").innerHTML = sportText.innerHTML + "<br/> " + gamemodeText.innerHTML + ", " + String(x)  + "km away." ;
+
+            
+        
     }
+
 
 }
 
