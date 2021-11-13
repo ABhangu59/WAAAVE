@@ -120,10 +120,10 @@ class UIController{
                 gamemodeSlider.max = 2;
             }else if(sportSlider.value == 5){
                 //baseball
-                gamemodeSlider.max = 3;
+                gamemodeSlider.max = 2;
             }else if(sportSlider.value == 6){
                 //football
-                gamemodeSlider.max = 4;
+                gamemodeSlider.max = 5;
 
             }else if (sportSlider.value == 7){
                 //tennis
@@ -135,22 +135,36 @@ class UIController{
 
                 gamemodeSlider.value = 1;
             }
+            //teehee i did it again
+            var UI = new UIController();
+            UI.updateGamemodeValue();
 
         });
 
         gamemodeSlider.addEventListener("click", function(){
-
+            ////// IMMA KEEP IT A BUCK, THIS RIGHT HERE. THESE TWO LINES. YEAH THESE ARE THE TWO WORST
+            ///// LINES OF CODE I'VE WRITTEN IN MY ENTIRE LIFE LMFAOOOOOOOOOO
+            //// IT WORKS THO SO IDC. THIS IS 100% BAD PRACTICE, THIS IS BEYOND  
+            /// CURSED BUT THANK GOD NO ONE IS GONNA SEE IT CUZ IM THE ONLY ONE WORKING ON THE MAP LOL.
+            // o well, i got hella midterms so i cant be bothered rn so imma do it again LOL. 
+            var UI = new UIController();
+            UI.updateGamemodeValue();
             
+        });
+    }
+
+        updateGamemodeValue(){
+
             if(sportSlider.value == 1){
                 //soccer
                 //gamemodeSlider.max = 4;
 
                 if(gamemodeSlider.value == 1){
-                    gamemodeText.innerHTML = "11v11"
+                    gamemodeText.innerHTML = "5v5"
                 }else if(gamemodeSlider.value == 2){
                     gamemodeText.innerHTML = "7v7"
                 }else if(gamemodeSlider.value == 3){
-                    gamemodeText.innerHTML="5v5"
+                    gamemodeText.innerHTML="11v11"
                 }else if(gamemodeSlider.value == 4){
                     gamemodeText.innerHTML = "penalties"
                 }
@@ -158,26 +172,69 @@ class UIController{
             }else if(sportSlider.value == 2){
                 //basketball
                 //gamemodeSlider.max = 4;
+                    if(gamemodeSlider.value == 1){
+                        gamemodeText.innerHTML = "KOTH 1v1";
+                    }else if(gamemodeSlider.value == 2){
+                        gamemodeText.innerHTML = "3v3 half court";
+                    
+                    }else if(gamemodeSlider.value == 3){
+                        gamemodeText.innerHTML = "5v5 full court";
+                    }else if(gamemodeSlider.value == 4){
+                        gamemodeText.innerHTML = "3pt comp";
+                    } 
             }else if(sportSlider.value == 3){
                 //volleyabll
                 //gamemodeSlider.max = 2; 
+                    if(gamemodeSlider.value == 1){
+                        gamemodeText.innerHTML = "4v4"
+                    }else if(gamemodeSlider.value = 2){
+                        gamemodeText.innerHTML = "6v6"
+                    }
             }else if(sportSlider.value == 4){
                 //field hockey
                 //gamemodeSlider.max = 2;
+                
+                    if(gamemodeSlider.value == 1){
+                        gamemodeText.innerHTML = "3v3"
+                    }else if(gamemodeSlider.value = 2){
+                        gamemodeText.innerHTML = "5v5"
+                    }
             }else if(sportSlider.value == 5){
                 //baseball
                 //gamemodeSlider.max = 3;
+                    if(gamemodeSlider.value == 1){
+                        gamemodeText.innerHTML = "throw and bat"
+                    }else if(gamemodeSlider.value = 2){
+                        gamemodeText.innerHTML = "9v9 and bat"
+                    }
             }else if(sportSlider.value == 6){
                 //football
                 //gamemodeSlider.max = 4;
+                    if(gamemodeSlider.value == 1){
+                        gamemodeText.innerHTML = "WR vs DB";
+                    }else if(gamemodeSlider.value == 2){
+                        gamemodeText.innerHTML = "flag 6v6";
+                    
+                    }else if(gamemodeSlider.value == 3){
+                        gamemodeText.innerHTML = "tackle 6v6";
+                    }else if(gamemodeSlider.value == 4){
+                        gamemodeText.innerHTML = "flag 9v9";
+                   
+                    }else if(gamemodeSlider.value == 5){
+                        gamemodeText.innerHTML = "tackle 11v11";
+                    }
              } else if (sportSlider.value == 7){
                     //tennis
                     //gamemodeSlider.max = 2;
-    
+                    if(gamemodeSlider.value == 1){
+                        gamemodeText.innerHTML = "1v1";
+                    }else if(gamemodeSlider.value == 2){
+                        gamemodeText.innerHTML = "2v2";
+                    } 
 
-            }
+            
 
-        });
+        }
 
     }
 
