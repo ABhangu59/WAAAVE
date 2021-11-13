@@ -123,7 +123,7 @@ p{
 }
 
 #showcase{
-    background: url('./assets/sports.jpeg') no-repeat center center/cover;
+    background: url('./img/05.jpg') no-repeat center center/cover;
     height:93vh; 
 }
 
@@ -173,7 +173,6 @@ section{
     width: 250px;
     height: 250px;
     overflow: hidden;
-    border-radius: 50%;
   }
   
   .circular--landscape img {
@@ -197,7 +196,7 @@ section{
 
 .outlayer h1 
 {
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 55px;
     text-align: center;
     color: rgb(132, 48, 201);
@@ -236,7 +235,7 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 .team .members h3 
 {
     color: ivory;
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 56px;
 }
 
@@ -244,7 +243,7 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 {
     color: ghostwhite;
     margin: 12px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .member-images
