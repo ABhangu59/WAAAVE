@@ -291,18 +291,19 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	margin:auto;
 	font-size:50px;
 	font-family: Calibri;
-	background:#1e8b4fff;
+	background:RoyalBlue;
 	border-radius:50px;
-	border: 3px solid black;
+	border: 1px solid black;
 	width:300px;
 	height:50px;
 	padding:7px;
+	font-weight:250;
 }
 
 #GitHub{
 	position:absolute;
-	top:25%;
-	left:20%;
+	top:17%;
+	left:23%;
 	/*background-color: rgb(224, 102, 102);*/
 }
 
@@ -314,8 +315,8 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 
 #Twitter{
 	position:absolute;
-	top:25%;
-	left:30%;
+	top:17%;
+	left:33%;
 	/*background-color: rgb(224, 102, 102);*/
 }
 
@@ -328,24 +329,24 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 
 #AddressDiv{
 	position: absolute;
-	left:10%;
-	top: 60%;
+	left:13%;
+	top: 50%;
 	/*background-color:tomato;*/
 	
 }
 
 #NumberDiv{
 	position: absolute;
-	left:10%;
-	top: 70%;
+	left:13%;
+	top: 60%;
 	/*background-color:tomato;*/
 	
 }
 
 #EmailDiv{
 	position: absolute;
-	left:10%;
-	top: 80%;
+	left:13%;
+	top: 70%;
 	/*background-color:tomato;*/	
 
 }
@@ -354,11 +355,12 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	margin:auto;
 	font-size:20px;
 	font-family: Calibri;
-	background:#1e8b4fff;
+	background:RoyalBlue;
 	border-radius:50px;
-	border: 3px solid black;
+	border: 1px solid black;
 	width:100px;
 	height:30px;
+	font-weight:400;
 }
 
 
@@ -367,12 +369,14 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	margin-left:50px;
 	font-size:40px;
 	font-family: Calibri;
-	background:#1e8b4fff;
+	background:RoyalBlue;
 	border-radius:50px;
-	border: 3px solid black;
+	border: 2px solid black;
 	width:250px;
 	height:50px;
 	display:inline-block;
+	font-weight:350;
+	padding:5px 0;
 }
 
 #Address{
@@ -380,11 +384,13 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	margin-left:50px;
 	font-size:20px;
 	font-family: Calibri;
-	background:#1e8b4fff;
+	background:SkyBlue;
 	border-radius:50px;
-	border: 3px solid black;
+	border: 1px solid black;
 	width:400px;
 	display:inline-block;
+	font-weight:300;
+	
 }
 
 #Number{
@@ -392,12 +398,14 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	margin-left:50px;
 	font-size:40px;
 	font-family: Calibri;
-	background:#1e8b4fff;
+	background:SkyBlue;
 	border-radius:50px;
-	border: 3px solid black;
+	border: 1px solid black;
 	width:400px;
 	height:40px;
 	display:inline-block;
+	padding:5px 0;
+	font-weight:300;
 }
 
 #Email{
@@ -405,61 +413,64 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 	margin-left:50px;
 	font-size:35px;
 	font-family: Calibri;
-	background:#1e8b4fff;
+	background:SkyBlue;
 	border-radius:50px;
-	border: 3px solid black;
+	border: 1px solid black;
 	width:400px;
 	height:50px;
 	display:inline-block;
+	font-weight:300;
+	padding:7px 0;
 }
 
 #TextareaDiv{
 	position:absolute;
-	right:12%;
-	background:#1e8b4fff;
-	top: 10%;
-	padding: 10px;
-	background:DarkBlue;
+	right:20.75%;
+	top: 23%;
+	padding: 5px;
+	border-radius:25px;
 	
 }
 
 #ContactUsText{
-	border: 3px solid black;
-	background:#1e8b4fff;
-	width:500px;
-	height:500px;
-	font-size:40px;
+	border: 1px solid black;
+	background:SkyBlue;
+	width:350px;
+	height:350px;
+	font-size:25px;
 	font-family:Calibri;
+	border-radius:25px;
+	padding:8px;
+	border: 15px solid RoyalBlue;
 	
 }
 
 #SubmitButton{
 	position: absolute;
-	bottom: 10%;
-	right: 23%;
-	border:2px solid black;
+	bottom: 22%;
+	right: 28%;
+	border:1px solid black;
 	font-size:15px;
 	width:100px;
 	height:50px;
-	background:DarkBlue;
-	color:#1e8b4fff;
-	font-weight:1000;
+	background:RoyalBlue;
+	font-weight:800;
 	border-radius:2px;
 	cursor: pointer;
+	border-radius:10px;
 }
 
 #SubmitText{
 	position: absolute;
-	top:3%;
-	right:14%;
-	border:2px solid black;
+	top:17%;
+	right:20%;
+	border:1px solid black;
 	font-size:15px;
-	width:450px;
+	width:400px;
 	height:30px;
-	background:DarkBlue;
-	color:#1e8b4fff;
+	background:LightSkyBlue;
 	font-weight:1000;
-	border-radius:2px;
+	border-radius:13px;
 }
 
 /* .main-banner
