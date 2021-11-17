@@ -32,8 +32,7 @@
 .bnt{
     display: inline-block;
     font-size: 50px;
-    color:rgb(31, 59, 110);
-    background: rgb(163, 201, 163);
+    background: RoyalBlue;
     padding: 20px 20px;
     border: none;
     border-radius: 10px;
@@ -41,14 +40,13 @@
 }
 
 .bnt:hover{
-    background: chartreuse;
+    background: SkyBlue;
 }
 
 .bnt2{
     display: inline-block;
     font-size: 20px;
-    color:rgb(31, 59, 110);
-    background: rgb(163, 201, 163);
+    background: RoyalBlue;
     padding: 10px 10px;
     border: none;
     border-radius: 10px;
@@ -62,7 +60,7 @@
 /* Main styling */
 html,body 
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Calibri;
     text-align: center;
     line-height: 1.7em;
 }
@@ -74,10 +72,13 @@ a{
 
 h1,h2,h3{
     padding-bottom: 20px;
+	font-family:Calibri;
+	color:black;
 }
 
 p{
     margin:10px 0;
+	font-size:20px;
 }
 
 /* Navbar */
@@ -100,6 +101,7 @@ p{
 #navbar h1{
     float:left;
     padding-top: 15px;
+	color:white;
 }
 
 #navbar ul{
@@ -118,8 +120,7 @@ p{
 }
 
 #navbar ul li a:hover{
-    background: chartreuse;
-    color:coral;
+    background: SkyBlue;
 }
 
 #showcase{
@@ -134,7 +135,7 @@ p{
 
 #showcase3{
     background: url('./img/04.jpg') no-repeat center center/cover;
-    height:93vh; 
+    height:100vh; 
 }
 
 .showcase_content{
@@ -173,7 +174,10 @@ section{
     width: 250px;
     height: 250px;
     overflow: hidden;
+	border:5px solid RoyalBlue;
   }
+  
+  
   
   .circular--landscape img {
     width: auto;
@@ -234,16 +238,17 @@ from the set guidelines. Anything is up to change as per the groups decision. */
 
 .team .members h3 
 {
-    color: ivory;
+    color: black;
     font-size: 28px;
     margin-top: 56px;
 }
 
 .members .role
 {
-    color: ghostwhite;
+    color: black;
     margin: 12px;
     font-size: 16px;
+	font-family:Calibri;
 }
 
 .member-images
